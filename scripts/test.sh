@@ -3,6 +3,7 @@
 set -ex
 
 # appium-doctor
+reset
 
 python3 ./test/aut-helloworld.py
 
