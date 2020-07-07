@@ -1,7 +1,7 @@
 # RESULT
 
-### image for piping to visual regression
 
+### python unittest result
 ```
 + pipenv run python3 ./test/aut-helloworld.py
 Creating a Pipfile for this project…
@@ -19,6 +19,8 @@ Ran 7 tests in 389.726s
 
 OK
 ```
+
+### image for piping into visual regression
 
 ![screencapture of custom studio](https://github.com/louiscklaw/casetify-tryout/raw/master/docs/zh_left_nav_menu_custom_studio.jpg)
 ![screencapture of 合作藝術家](https://github.com/louiscklaw/casetify-tryout/raw/master/docs/zh_left_nav_menu_%E5%90%88%E4%BD%9C%E8%97%9D%E8%A1%93%E5%AE%B6.jpg)
