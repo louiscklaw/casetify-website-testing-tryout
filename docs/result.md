@@ -1,5 +1,6 @@
 # RESULT
 
+### image for piping to visual regression
 
 ![screencapture of custom studio](https://github.com/louiscklaw/casetify-tryout/raw/master/docs/zh_left_nav_menu_custom_studio.jpg)
 ![screencapture of 合作藝術家](https://github.com/louiscklaw/casetify-tryout/raw/master/docs/zh_left_nav_menu_%E5%90%88%E4%BD%9C%E8%97%9D%E8%A1%93%E5%AE%B6.jpg)
