@@ -74,12 +74,8 @@ class CasetifyHelloworld(unittest.TestCase):
         self.waitAfterTapAction()
 
     def test_tapCustomStudio(self):
-      self.test_tapMenuHamburger()
-
-      el = self.selectElByText("CUSTOM STUDIO")
-      el.click()
-      self.waitAfterTapAction()
-      self.takeScreenShot('./screenshots/left_nav_menu_custom_studio.jpg')
+      test_settings = left_nav_settings[LEFT_NAV_CUSTOM_STUDIO]
+      self.tapAndTakeScreenShot(LEFT_NAV_CUSTOM_STUDIO, test_settings[IDX_FILENAME])
 
     # 合作藝術家
     def test_tapFeatureArtist(self):
