@@ -35,6 +35,8 @@ left_nav_settings = {
   LEFT_NAV_TECH_ACCESSORIES :['./screenshots/zh_left_nav_menu_電子產品配件.jpg']
 }
 
+HAMBURGER_BUTTON_XY = (68, 144)
+
 # Returns abs path relative to this file and not cwd
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -42,10 +44,10 @@ PATH = lambda p: os.path.abspath(
 
 class CasetifyHelloworld(unittest.TestCase):
     def waitForAppsSteady(self):
-      time.sleep(15)
+      time.sleep(config.TIME_APP_STEADY)
 
     def waitAfterTapAction(self):
-      time.sleep(10)
+      time.sleep(config.TIME_TAP_STEADY)
 
     def takeScreenShot(self, file_jpg_path):
         screenshotBase64 = self.driver.get_screenshot_as_base64()
@@ -88,7 +90,8 @@ class CasetifyHelloworld(unittest.TestCase):
         # 68,144
         # el = self.driver.find_element_by_accessibility_id('Toggle navigation')
         # el.click()
-        TouchAction(self.driver).tap(None, 68, 144, 1).perform()
+        (HAM_X, HAM_Y) = HAMBURGER_BUTTON_XY
+        TouchAction(self.driver).tap(None, HAM_X, HAM_Y, 1).perform()
         self.waitAfterTapAction()
 
     def test_tapCustomStudio(self):
