@@ -23,7 +23,6 @@ class CasetifyHelloworld(unittest.TestCase):
     def waitAfterTapAction(self):
       time.sleep(5)
 
-
     def setUp(self):
         desired_caps = {}
         desired_caps['platformName'] = 'Android'
@@ -47,6 +46,15 @@ class CasetifyHelloworld(unittest.TestCase):
         # el.click()
         TouchAction(self.driver).tap(None, 68, 144, 1).perform()
         self.waitAfterTapAction()
+
+
+
+    def test_tapCustomStudio(self):
+      self.test_tapMenuHamburger()
+
+      el = self.driver.find_element_by_xpath('//android.view.View[@text="CUSTOM STUDIO"]')
+      el.click()
+      self.waitAfterTapAction()
 
 
 if __name__ == '__main__':

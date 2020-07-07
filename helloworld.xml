@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+<android.widget.ListView>
+<android.view.View>
+  <android.view.View index="0" package="com.casetagram.casetagram" class="android.view.View" text="CUSTOM STUDIO" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[49,454][354,509]" displayed="true" />
+</android.view.View>
+</android.widget.ListView>
+
+
+
+</bookstore>
