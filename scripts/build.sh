@@ -2,4 +2,5 @@
 
 set -ex
 
-pip install Appium-Python-Client
+pip3 install Appium-Python-Client
+pip3 install lxml
