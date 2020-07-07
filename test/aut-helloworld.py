@@ -81,11 +81,6 @@ class CasetifyHelloworld(unittest.TestCase):
       self.waitAfterTapAction()
       self.takeScreenShot('./screenshots/left_nav_menu_custom_studio.jpg')
 
-    # # # # # 智能手機
-    # def test_tapSmartPhone(self):
-    #   test_settings = left_nav_settings[LEFT_NAV_SMARTPHONE]
-    #   self.tapAndTakeScreenShot(LEFT_NAV_SMARTPHONE, test_settings[IDX_FILENAME])
-
     # 合作藝術家
     def test_tapFeatureArtist(self):
       test_settings = left_nav_settings[LEFT_NAV_FEATURE_ARTIST]
