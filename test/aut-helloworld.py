@@ -161,6 +161,9 @@ class CasetifyHelloworld(unittest.TestCase):
       self.tapNavItemAndTest(test_settings)
 
 if __name__ == '__main__':
-    # suite = unittest.TestLoader().loadTestsFromTestCase(CasetifyHelloworld)
-    # unittest.TextTestRunner(verbosity=2).run(suite)
-    unittest.main(testRunner=HTMLTestRunner(output='../docs'))
+  # normal test runner
+  # suite = unittest.TestLoader().loadTestsFromTestCase(CasetifyHelloworld)
+  # unittest.TextTestRunner(verbosity=2).run(suite)
+
+  # html test runner
+  unittest.main(testRunner=HTMLTestRunner(output='../docs'))
