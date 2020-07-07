@@ -17,6 +17,7 @@ import config
 from test_settings import *
 
 from diffimg import diff
+from pyunitreport import HTMLTestRunner
 
 # Returns abs path relative to this file and not cwd
 PATH = lambda p: os.path.abspath(
@@ -160,6 +161,6 @@ class CasetifyHelloworld(unittest.TestCase):
       self.tapNavItemAndTest(test_settings)
 
 if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(CasetifyHelloworld)
-    unittest.TextTestRunner(verbosity=2).run(suite)
-    # unittest.main(testRunner=HTMLTestRunner(output='../docs'))
+    # suite = unittest.TestLoader().loadTestsFromTestCase(CasetifyHelloworld)
+    # unittest.TextTestRunner(verbosity=2).run(suite)
+    unittest.main(testRunner=HTMLTestRunner(output='../docs'))
