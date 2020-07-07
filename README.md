@@ -1,6 +1,6 @@
 # README
 
-appium helloworld tour for castify apps
+appium helloworld tour for casetify apps
 
 
 ### Requirements/toolstacks (tested under ubuntu 18.04.4)
@@ -18,11 +18,10 @@ appium helloworld tour for castify apps
 - python-appium webdriver
   - `pipenv sync`
 
-```
-# ./scripts/build.sh
-```
-
 ### start the test
 ```
 # ./scripts/test.sh
 ```
+
+### How it works:
+https://youtu.be/kwfbEu5tiTk
