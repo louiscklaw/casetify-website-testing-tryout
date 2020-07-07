@@ -28,4 +28,4 @@ appium helloworld tour for casetify apps
 https://youtu.be/kwfbEu5tiTk
 
 ### result page
-[link to result screencapture](https://github.com/louiscklaw/casetify-tryout/blob/master/docs/result.md)
+[link to result demo page](https://louiscklaw.github.io/casetify-tryout/)
