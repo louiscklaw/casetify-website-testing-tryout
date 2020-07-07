@@ -2,6 +2,24 @@
 
 ### image for piping to visual regression
 
+```
++ pipenv run python3 ./test/aut-helloworld.py
+Creating a Pipfile for this project…
+Loading .env environment variables…
+test_tapCoLab (__main__.CasetifyHelloworld) ... ok
+test_tapCustomStudio (__main__.CasetifyHelloworld) ... ok
+test_tapFeatureArtist (__main__.CasetifyHelloworld) ... ok
+test_tapMenuHamburger (__main__.CasetifyHelloworld) ... ok
+test_tapSignaturePrints (__main__.CasetifyHelloworld) ... ok
+test_tapSmartPhone (__main__.CasetifyHelloworld) ... ok
+test_tapTechAccessories (__main__.CasetifyHelloworld) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 389.726s
+
+OK
+```
+
 ![screencapture of custom studio](https://github.com/louiscklaw/casetify-tryout/raw/master/docs/zh_left_nav_menu_custom_studio.jpg)
 ![screencapture of 合作藝術家](https://github.com/louiscklaw/casetify-tryout/raw/master/docs/zh_left_nav_menu_%E5%90%88%E4%BD%9C%E8%97%9D%E8%A1%93%E5%AE%B6.jpg)
 ![screencapture of 品牌聯乘](https://github.com/louiscklaw/casetify-tryout/raw/master/docs/zh_left_nav_menu_%E5%93%81%E7%89%8C%E8%81%AF%E4%B9%98.jpg)
