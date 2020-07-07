@@ -16,7 +16,7 @@ appium helloworld tour for castify apps
     - https://nodejs.org/dist/
 
 - python-appium webdriver
-  - `pip install Appium-Python-Client`
+  - `pipenv sync`
 
 ```
 # ./scripts/build.sh

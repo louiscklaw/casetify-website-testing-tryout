@@ -12,6 +12,8 @@ from appium.webdriver.common.touch_action import TouchAction
 import time
 import base64
 
+import config
+
 LEFT_NAV_CUSTOM_STUDIO='CUSTOM STUDIO'
 LEFT_NAV_SMARTPHONE='智能手機'
 LEFT_NAV_APPLE_WATCH='APPLE WATCH'
@@ -43,7 +45,7 @@ class CasetifyHelloworld(unittest.TestCase):
       time.sleep(15)
 
     def waitAfterTapAction(self):
-      time.sleep(5)
+      time.sleep(10)
 
     def takeScreenShot(self, file_jpg_path):
         screenshotBase64 = self.driver.get_screenshot_as_base64()
@@ -89,25 +91,18 @@ class CasetifyHelloworld(unittest.TestCase):
         TouchAction(self.driver).tap(None, 68, 144, 1).perform()
         self.waitAfterTapAction()
 
-    # def test_tapCustomStudio(self):
-    #   self.test_tapMenuHamburger()
+    def test_tapCustomStudio(self):
+      self.test_tapMenuHamburger()
 
-    #   el = self.selectElByText("CUSTOM STUDIO")
-    #   el.click()
-    #   self.waitAfterTapAction()
-    #   self.takeScreenShot('./screenshots/left_nav_menu_custom_studio.jpg')
+      el = self.selectElByText("CUSTOM STUDIO")
+      el.click()
+      self.waitAfterTapAction()
+      self.takeScreenShot('./screenshots/left_nav_menu_custom_studio.jpg')
 
-    # # # # 智能手機
-    def test_tapSmartPhone(self):
-      test_settings = left_nav_settings[LEFT_NAV_SMARTPHONE]
-      self.tapAndTakeScreenShot(LEFT_NAV_SMARTPHONE, test_settings[IDX_FILENAME])
-
-    # def test_HappyTourLeftNavMenu(self):
-    #   for nav_item_name in left_nav_settings.keys():
-    #     item_name = nav_item_name
-    #     nav_test_settings = left_nav_settings[nav_item_name]
-    #     jpg_path = nav_test_settings[IDX_FILENAME]
-    #     self.tapAndTakeScreenShot(nav_item_name, jpg_path)
+    # # # # # 智能手機
+    # def test_tapSmartPhone(self):
+    #   test_settings = left_nav_settings[LEFT_NAV_SMARTPHONE]
+    #   self.tapAndTakeScreenShot(LEFT_NAV_SMARTPHONE, test_settings[IDX_FILENAME])
 
     # 合作藝術家
     def test_tapFeatureArtist(self):
