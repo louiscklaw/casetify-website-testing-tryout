@@ -10,11 +10,11 @@ from lxml import etree
 
 # f = StringIO('<foo><bar></bar></foo>')
 # f = ''.join(open('./helloworld.xml','r').readlines())
-tree = etree.parse('./debug.xml')
+tree = etree.parse('utils/helloworld.xml')
 # tree = etree.parse('./helloworld.xml')
 
 
-r = tree.xpath('//android.view.View[@text="CUSTOM STUDIO"]')
+r = tree.xpath('//android.view.View[@content-desc="合作藝術家"]')
 print(r[0].tag)
 
 

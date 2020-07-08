@@ -3,9 +3,7 @@
 <bookstore>
 
 <android.widget.ListView>
-<android.view.View>
-  <android.view.View index="0" package="com.casetagram.casetagram" class="android.view.View" text="CUSTOM STUDIO" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[49,454][354,509]" displayed="true" />
-</android.view.View>
+<android.view.View index="0" package="com.casetagram.casetagram" class="android.view.View" text="" content-desc="合作藝術家" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[52,1162][236,1212]" displayed="true" />
 </android.widget.ListView>
 
 

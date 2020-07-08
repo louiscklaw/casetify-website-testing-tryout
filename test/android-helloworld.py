@@ -30,36 +30,36 @@ class SimpleAndroidTests(unittest.TestCase):
         # end the session
         self.driver.quit()
 
-    # def test_find_elements(self):
-    #     el = self.driver.find_element_by_accessibility_id('Graphics')
-    #     el.click()
-    #     el = self.driver.find_element_by_accessibility_id('Arcs')
-    #     self.assertIsNotNone(el)
+    def test_find_elements(self):
+        el = self.driver.find_element_by_accessibility_id('Graphics')
+        el.click()
+        el = self.driver.find_element_by_accessibility_id('Arcs')
+        self.assertIsNotNone(el)
 
-    #     self.driver.back()
+        self.driver.back()
 
-    #     el = self.driver.find_element_by_accessibility_id("App")
-    #     self.assertIsNotNone(el)
+        el = self.driver.find_element_by_accessibility_id("App")
+        self.assertIsNotNone(el)
 
-    #     els = self.driver.find_elements_by_android_uiautomator("new UiSelector().clickable(true)")
-    #     self.assertGreaterEqual(12, len(els))
+        els = self.driver.find_elements_by_android_uiautomator("new UiSelector().clickable(true)")
+        self.assertGreaterEqual(12, len(els))
 
-    #     self.driver.find_element_by_android_uiautomator('text("API Demos")')
+        self.driver.find_element_by_android_uiautomator('text("API Demos")')
 
 
-    # def test_simple_actions(self):
-    #     el = self.driver.find_element_by_accessibility_id('Graphics')
-    #     el.click()
+    def test_simple_actions(self):
+        el = self.driver.find_element_by_accessibility_id('Graphics')
+        el.click()
 
-    #     el = self.driver.find_element_by_accessibility_id('Arcs')
-    #     el.click()
+        el = self.driver.find_element_by_accessibility_id('Arcs')
+        el.click()
 
-    #     self.driver.find_element_by_android_uiautomator('new UiSelector().text("Graphics/Arcs")')
+        self.driver.find_element_by_android_uiautomator('new UiSelector().text("Graphics/Arcs")')
 
     def test_takeScreenShot(self):
         screenshotBase64 = self.driver.get_screenshot_as_base64()
         imgdata = base64.b64decode(screenshotBase64)
-        filename = './screenshots/appium_screenshot_helloworld.jpg'
+        filename = './appium_screenshot_helloworld.jpg'
         with open(filename, 'wb') as f:
             f.write(imgdata)
 
