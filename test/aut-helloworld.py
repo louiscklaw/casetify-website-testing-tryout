@@ -92,7 +92,7 @@ class CasetifyHelloworld(unittest.TestCase):
     def setUp(self):
         desired_caps = {}
         desired_caps['platformName'] = 'Android'
-        desired_caps['platformVersion'] = '8.0'
+        desired_caps['platformVersion'] = '9.0'
         desired_caps['deviceName'] = 'Android Emulator'
         desired_caps['app'] = PATH(
             '/home/logic/_workspace/casetify-tryout/AUT/Casetify Custom Phone Case_v1.6.1_apkpure.com.apk'
@@ -159,6 +159,9 @@ class CasetifyHelloworld(unittest.TestCase):
     def test_tapTechAccessories(self):
       test_settings = left_nav_settings[LEFT_NAV_TECH_ACCESSORIES]
       self.tapNavItemAndTest(test_settings)
+
+    def test_failureIcidator(self):
+      self.assertTrue(False)
 
 if __name__ == '__main__':
   # normal test runner
