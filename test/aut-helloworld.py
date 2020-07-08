@@ -31,18 +31,17 @@ class CasetifyHelloworld(unittest.TestCase):
     def waitAfterTapAction(self):
       time.sleep(config.TIME_TAP_STEADY)
 
-    def waitUntilTextAppear(self, selector, timeout=15):
-      keep_continue = True
+    def waitUntilSelectorAppear(self, selector, timeout=15):
+      keep_try = True
       try:
-        while keep_continue:
+        while keep_try:
           el = self.driver.find_element_by_xpath(selector)
-          time.sleep(1)
-          timeout-=1
-          keep_continue= False
           return el
 
       except Exception as e:
         if timeout > 0:
+          print('wanted selector not found, sleep and retry')
+          time.sleep(1)
           pass
         else:
           raise e
@@ -59,7 +58,7 @@ class CasetifyHelloworld(unittest.TestCase):
 
     def tapAndTakeScreenShot(self, xpath_selector, jpg_path):
       self.tapMenuHamburger()
-      self.waitUntilTextAppear(xpath_selector)
+      self.waitUntilSelectorAppear(xpath_selector)
 
       el = self.selectElByText(xpath_selector)
       el.click()
